@@ -7,6 +7,8 @@
 	<key>SUEnableInstallerLauncherService</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string></string>
+	<string>https://devrax.github.io./auto-updater-swift/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>K0+nGXOgAWnI1YouOljNIGlS8GUYyAX5sh5pjwiFEAw=</string>
 </dict>
 </plist>

@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct auto_update_appApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    @StateObject var updaterViewModel = UpdaterViewModel()
+        
+        var body: some Scene {
+            WindowGroup {
+                ContentView()
+            }
+            .commands {
+                CommandGroup(after: .appInfo) {
+                    CheckForUpdatesView(updaterViewModel: updaterViewModel)
+                }
+            }
         }
-    }
 }
